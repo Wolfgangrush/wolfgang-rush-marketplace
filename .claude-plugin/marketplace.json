@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace",
+  "name": "wolfgang-rush",
+  "description": "Wolfgang Rush — open-source Claude Code plugin family for Indian-court litigation drafting. 13 court-specific drafting plugins (Supreme Court, all High Courts, District Courts, MACT, Family, Consumer, Banking, IP, Tax, Labour, Property, Contracts, Company tribunals). Each plugin ships a 6-agent drafting pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Wolfgang Rush",
+    "email": "advrushikeshravindramahajan@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "supreme-court-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/supreme-court-drafting-litigation"
+      },
+      "description": "Drafts pleadings before the Supreme Court of India — SLPs, Writs under Article 32, Curative & Review petitions, Transfer petitions.",
+      "category": "litigation-drafting",
+      "tags": ["india", "supreme-court", "slp", "writ-petition", "constitutional"]
+    },
+    {
+      "name": "indian-hc-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-hc-drafting-litigation"
+      },
+      "description": "Bench-config-aware drafting plugin for any High Court of India — Writs under Article 226, PILs, Letters Patent Appeals, Criminal & Civil revisions.",
+      "category": "litigation-drafting",
+      "tags": ["india", "high-court", "writ-petition", "pil", "article-226"]
+    },
+    {
+      "name": "district-court-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/district-court-drafting-litigation"
+      },
+      "description": "Civil-side drafting plugin for District Courts across India — suits under CPC, applications, written statements, execution proceedings.",
+      "category": "litigation-drafting",
+      "tags": ["india", "district-court", "civil", "cpc", "trial-court"]
+    },
+    {
+      "name": "indian-family-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-family-drafting-litigation"
+      },
+      "description": "Drafts pleadings before Indian Family Courts — divorce, maintenance, custody, guardianship, restitution of conjugal rights.",
+      "category": "litigation-drafting",
+      "tags": ["india", "family-court", "divorce", "maintenance", "custody"]
+    },
+    {
+      "name": "indian-consumer-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-consumer-drafting"
+      },
+      "description": "Consumer-protection & medical-negligence drafting plugin for District / State / National Consumer Disputes Redressal Commissions under CPA 2019.",
+      "category": "litigation-drafting",
+      "tags": ["india", "consumer-protection", "ncdrc", "medical-negligence", "cpa-2019"]
+    },
+    {
+      "name": "indian-mact-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-mact-drafting"
+      },
+      "description": "Motor Accident Claims Tribunal drafting plugin — compensation petitions under Section 166 MV Act, no-fault claims, insurance disputes.",
+      "category": "litigation-drafting",
+      "tags": ["india", "mact", "motor-accident", "compensation", "mv-act"]
+    },
+    {
+      "name": "indian-banking-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-banking-drafting-litigation"
+      },
+      "description": "Banking & financial-litigation drafting plugin — DRT applications, SARFAESI proceedings, NI Act §138, IBC §7/§95, DRAT appeals.",
+      "category": "litigation-drafting",
+      "tags": ["india", "banking", "drt", "sarfaesi", "ni-act", "ibc"]
+    },
+    {
+      "name": "indian-labour-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-labour-drafting-litigation"
+      },
+      "description": "Labour, industrial-disputes & employment-rights drafting plugin — ID Act references, gratuity, ESI/PF, sexual-harassment complaints.",
+      "category": "litigation-drafting",
+      "tags": ["india", "labour", "industrial-disputes", "employment", "id-act"]
+    },
+    {
+      "name": "indian-ip-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-ip-drafting"
+      },
+      "description": "Intellectual-property litigation drafting — trademark infringement, copyright suits, patent revocations, passing-off actions.",
+      "category": "litigation-drafting",
+      "tags": ["india", "intellectual-property", "trademark", "copyright", "patent"]
+    },
+    {
+      "name": "indian-tax-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-tax-drafting"
+      },
+      "description": "Direct-tax appellate litigation drafting — ITAT appeals, CIT(A) appeals, writ petitions on tax matters, refund claims.",
+      "category": "litigation-drafting",
+      "tags": ["india", "tax", "itat", "income-tax", "appellate"]
+    },
+    {
+      "name": "indian-property-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-property-drafting-litigation"
+      },
+      "description": "Property, conveyancing, estate & inter-vivos transfer instruments — sale deeds, gift deeds, partition suits, specific performance.",
+      "category": "litigation-drafting",
+      "tags": ["india", "property", "conveyancing", "specific-performance", "partition"]
+    },
+    {
+      "name": "indian-contracts-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-contracts-drafting-litigation"
+      },
+      "description": "Contracts, personal-estate documents & contractual-litigation drafting — breach of contract, arbitration §8/§11/§34, recovery suits.",
+      "category": "litigation-drafting",
+      "tags": ["india", "contracts", "arbitration", "breach", "recovery"]
+    },
+    {
+      "name": "indian-company-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-company-drafting"
+      },
+      "description": "Company-law tribunal litigation drafting — NCLT petitions under Companies Act 2013, oppression & mismanagement, IBC §7/§9, schemes of arrangement.",
+      "category": "litigation-drafting",
+      "tags": ["india", "company-law", "nclt", "ibc", "oppression-mismanagement"]
+    }
+  ]
+}

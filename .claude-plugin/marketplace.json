@@ -137,6 +137,16 @@
       "description": "Company-law tribunal litigation drafting — NCLT petitions under Companies Act 2013, oppression & mismanagement, IBC §7/§9, schemes of arrangement.",
       "category": "litigation-drafting",
       "tags": ["india", "company-law", "nclt", "ibc", "oppression-mismanagement"]
+    },
+    {
+      "name": "nclat-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/nclat-drafting"
+      },
+      "description": "NCLAT appellate drafting — Companies Act §421 appeals and IBC §61 appeals from NCLT orders. Principal Bench and Chennai Bench. Complementary to indian-company-drafting.",
+      "category": "litigation-drafting",
+      "tags": ["india", "nclat", "appellate-tribunal", "section-421", "section-61-ibc", "innoventive", "mobilox", "essar-steel"]
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Open-source plugin family for Indian-court litigation drafting, built on Claude Code.
 
-13 court-specific drafting plugins, each shipping a 6-agent pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.
+14 court-specific drafting plugins, each shipping a 6-agent pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.
 
 ---
 
@@ -33,7 +33,7 @@ Replace `indian-hc-drafting` with any plugin name from the table. Install as man
 
 ---
 
-## The 13 plugins
+## The 14 plugins
 
 | Plugin | Court / domain | Desktop release |
 |---|---|---|
@@ -50,6 +50,7 @@ Replace `indian-hc-drafting` with any plugin name from the table. Install as man
 | `indian-property-drafting` | Sale/gift deeds, partition, specific performance | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-property-drafting-litigation/releases/tag/v0.1.0-alpha) |
 | `indian-contracts-drafting` | Contracts, arbitration §8/§11/§34, recovery | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-contracts-drafting-litigation/releases/tag/v0.1.0-alpha) |
 | `indian-company-drafting` | NCLT (oppression, schemes, IBC §7/§9) AND NCLAT appeals (§421, §61 IBC) | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-company-drafting/releases/tag/v0.1.0-alpha) |
+| `indian-rent-control-drafting` | Rent-control eviction · standard rent · rent deposit · §106 TPA notice · MTA 2021 | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-rent-control-drafting/releases/tag/v0.1.0-alpha) |
 
 ---
 

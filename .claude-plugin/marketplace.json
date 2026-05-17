@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace",
   "name": "wolfgang-rush",
-  "description": "Wolfgang Rush — open-source Claude Code plugin family for Indian-court litigation drafting. 13 court-specific drafting plugins (Supreme Court, all High Courts, District Courts, MACT, Family, Consumer, Banking, IP, Tax, Labour, Property, Contracts, Company tribunals). Each plugin ships a 6-agent drafting pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.",
+  "description": "Wolfgang Rush — open-source Claude Code plugin family for Indian-court litigation drafting. 14 court-specific drafting plugins (Supreme Court, all High Courts, District Courts, MACT, Family, Consumer, Banking, IP, Tax, Labour, Property, Contracts, Company tribunals, Rent Control). Each plugin ships a 6-agent drafting pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.",
   "version": "0.1.0",
   "owner": {
     "name": "Wolfgang Rush",
@@ -137,6 +137,16 @@
       "description": "Company-law tribunal litigation drafting — NCLT petitions under Companies Act 2013 (oppression & mismanagement, schemes of arrangement, reduction of capital, revival, investigation, class action) AND NCLAT appellate drafting (Companies Act §421 appeals and IBC §61 appeals from NCLT orders).",
       "category": "litigation-drafting",
       "tags": ["india", "company-law", "nclt", "nclat", "ibc", "oppression-mismanagement", "section-421", "section-61-ibc"]
+    },
+    {
+      "name": "indian-rent-control-drafting",
+      "source": {
+        "source": "github",
+        "repo": "Wolfgangrush/indian-rent-control-drafting"
+      },
+      "description": "Rent-control / landlord-tenant litigation drafting across all major State Rent Control regimes — eviction (non-payment / bona-fide need / nuisance / sub-letting) under Maharashtra Rent Control Act 1999, Delhi Rent Control Act 1958, Tamil Nadu 2017 Act, Karnataka Rent Act 2001, West Bengal Premises Tenancy Act 1997, UP Urban Buildings Act 1972, Gujarat Rent Control Act, AP/Telangana Buildings Act 1960 · standard-rent / fair-rent fixation · rent-deposit · Section 106 TPA termination notice · landlord recovery suit · tenant written statement · revision/appeal · Model Tenancy Act 2021 framework.",
+      "category": "litigation-drafting",
+      "tags": ["india", "rent-control", "eviction", "tenancy", "landlord-tenant", "small-causes", "rent-controller", "maharashtra-rent-control", "delhi-rent-control", "model-tenancy-act-2021", "section-106-tpa", "bona-fide-personal-need"]
     }
   ]
 }

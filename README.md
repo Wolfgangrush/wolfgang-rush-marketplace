@@ -1,4 +1,4 @@
-# Wolfgang Rush — Claude Code Plugin Marketplace
+# Wolfgang Rush — Claude plugin family
 
 Open-source plugin family for Indian-court litigation drafting, built on Claude Code.
 
@@ -6,55 +6,50 @@ Open-source plugin family for Indian-court litigation drafting, built on Claude 
 
 ---
 
-## Install (for users)
+## Two ways to install
 
-You need **Claude Code (CLI)** — *not* the Claude desktop app at claude.ai. Install Claude Code first:
+### ✅ Option 1 — Claude desktop app (easiest for non-developers)
 
-```bash
-# macOS / Linux / Windows — official installer
-curl -fsSL https://claude.ai/install.sh | sh
-```
+Each plugin ships a pre-packaged `.zip` on its **GitHub Releases** page (see the table below). The zip is built with the plugin manifest at its root so the Claude desktop app accepts it directly.
 
-Or via npm:
+1. Click the release link for any plugin in the table below.
+2. Under **Assets**, download the `<plugin-name>.zip`.
+3. Open the **Claude desktop app** → **Settings** → **Plugins** → **Upload local plugin**.
+4. Drag the `.zip` into the upload box. The plugin installs.
+5. Repeat for any other plugin you want.
 
-```bash
-npm install -g @anthropic-ai/claude-code
-```
+> ⚠️ **Do not use GitHub's "Download ZIP" button** (the green Code button → Download ZIP). That wraps the plugin inside a `repo-main/` folder, breaking validation. Always use the **release `.zip` from the Releases tab**.
 
-Then open Claude Code in any project folder and run:
+### 🧑‍💻 Option 2 — Claude Code (CLI) — recommended for plugin family
+
+If you have Claude Code installed (`curl -fsSL https://claude.ai/install.sh | sh`), the whole family installs from one marketplace:
 
 ```
 /plugin marketplace add Wolfgangrush/wolfgang-rush-marketplace
 /plugin install indian-hc-drafting@wolfgang-rush
 ```
 
-Replace `indian-hc-drafting` with any plugin from the list below. Install as many as you need.
+Replace `indian-hc-drafting` with any plugin name from the table. Install as many as you need with one line each.
 
 ---
 
 ## The 13 plugins
 
-| Plugin | What it drafts |
-|---|---|
-| `supreme-court-drafting` | Supreme Court of India — SLPs, Article 32 writs, curative/review, transfer petitions |
-| `indian-hc-drafting` | Any High Court — Article 226 writs, PILs, LPAs, criminal/civil revisions |
-| `district-court-drafting` | District Courts — CPC suits, applications, written statements, execution |
-| `indian-family-drafting` | Family Courts — divorce, maintenance, custody, guardianship |
-| `indian-consumer-drafting` | District / State / National Consumer Commissions under CPA 2019 |
-| `indian-mact-drafting` | Motor Accident Claims Tribunal — §166 MV Act compensation petitions |
-| `indian-banking-drafting` | DRT, SARFAESI, NI Act §138, IBC §7/§95, DRAT appeals |
-| `indian-labour-drafting` | Labour courts — ID Act, gratuity, ESI/PF, sexual-harassment |
-| `indian-ip-drafting` | Trademark infringement, copyright, patent revocations |
-| `indian-tax-drafting` | ITAT appeals, CIT(A) appeals, tax writs |
-| `indian-property-drafting` | Sale/gift deeds, partition suits, specific performance |
-| `indian-contracts-drafting` | Contracts, arbitration §8/§11/§34, recovery suits |
-| `indian-company-drafting` | NCLT — Companies Act 2013, oppression, IBC, schemes |
-
----
-
-## Why "not the claude.ai desktop app"?
-
-The claude.ai desktop app's plugin uploader is a different surface — it validates a different manifest shape, and GitHub's "Download ZIP" wraps the plugin inside a `repo-main/` folder which the uploader cannot unwrap. These plugins are authored for **Claude Code (CLI)**, the developer tool. Use the `/plugin marketplace add` flow above; the install is two lines and ~10 seconds per plugin.
+| Plugin | Court / domain | Desktop release |
+|---|---|---|
+| `supreme-court-drafting` | Supreme Court — SLPs, Article 32 writs, curative/review | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/supreme-court-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-hc-drafting` | Any High Court — Article 226 writs, PILs, LPAs | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-hc-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `district-court-drafting` | District Courts — CPC suits, applications, WS | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/district-court-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-family-drafting` | Family Courts — divorce, maintenance, custody | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-family-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-consumer-drafting` | District/State/National Consumer Commissions (CPA 2019) | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-consumer-drafting/releases/tag/v0.1.0-alpha) |
+| `indian-mact-drafting` | MACT — §166 MV Act compensation | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-mact-drafting/releases/tag/v0.1.0-alpha) |
+| `indian-banking-drafting` | DRT, SARFAESI, NI Act §138, IBC §7/§95, DRAT | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-banking-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-labour-drafting` | Labour courts — ID Act, gratuity, ESI/PF, SH | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-labour-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-ip-drafting` | Trademark, copyright, patent | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-ip-drafting/releases/tag/v0.1.0-alpha) |
+| `indian-tax-drafting` | ITAT, CIT(A), tax writs | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-tax-drafting/releases/tag/v0.1.0-alpha) |
+| `indian-property-drafting` | Sale/gift deeds, partition, specific performance | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-property-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-contracts-drafting` | Contracts, arbitration §8/§11/§34, recovery | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-contracts-drafting-litigation/releases/tag/v0.1.0-alpha) |
+| `indian-company-drafting` | NCLT — Companies Act 2013, IBC, oppression | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-company-drafting/releases/tag/v0.1.0-alpha) |
 
 ---
 

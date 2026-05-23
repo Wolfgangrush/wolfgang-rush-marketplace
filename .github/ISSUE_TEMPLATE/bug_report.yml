@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a defect in a Wolfgang Rush plugin or the marketplace itself
+title: "[bug] <short description>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please file plugin-specific defects on the **specific plugin's repository**, not on this marketplace repo. The full plugin list is in the [README](../README.md).
+
+        If this is a security vulnerability, please do not file a public issue. See [SECURITY.md](../SECURITY.md) for private disclosure channels.
+
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin name and version
+      description: e.g. `indian-hc-drafting@0.1.0-alpha`
+    validations:
+      required: true
+
+  - type: input
+    id: court
+    attributes:
+      label: Court / bench / matter type
+      description: e.g. Delhi High Court (Original Side), Writ Petition under Article 226
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Minimal reproducer
+      description: Steps to reproduce. Please **strip any client-identifying information** before sharing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Claude Code version (`claude --version`), OS, install scope (user / project / local)
+    validations:
+      required: false

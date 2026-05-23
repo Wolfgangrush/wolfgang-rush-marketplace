@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Wolfgang Rush — Indian-Court Drafting Plugins for Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A24C"/>
+      <stop offset="100%" stop-color="#E8C176"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="240" fill="url(#bg)" rx="16"/>
+
+  <!-- Monogram badge -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="120" height="120" rx="12" fill="none" stroke="url(#accent)" stroke-width="3"/>
+    <text x="60" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#F8FAFC" text-anchor="middle">WR</text>
+    <line x1="22" y1="98" x2="98" y2="98" stroke="url(#accent)" stroke-width="2"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(220, 88)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#F8FAFC">Wolfgang Rush</text>
+    <line x1="0" y1="18" x2="500" y2="18" stroke="url(#accent)" stroke-width="1.5"/>
+    <text x="0" y="56" font-family="'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#94A3B8" letter-spacing="2">INDIAN-COURT DRAFTING PLUGINS · CLAUDE CODE</text>
+  </g>
+</svg>

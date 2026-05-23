@@ -1,0 +1,46 @@
+name: Plugin proposal
+description: Propose a new plugin to add to the Wolfgang Rush family
+title: "[plugin-proposal] <name>"
+labels: ["plugin-proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to suggest a new Indian-court forum, tribunal, or specialised litigation surface that is not yet covered by the 14 plugins in the family. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full scope of the existing family.
+
+  - type: input
+    id: name
+    attributes:
+      label: Proposed plugin name
+      description: e.g. `indian-cgst-drafting`, `indian-environment-tribunal-drafting`
+    validations:
+      required: true
+
+  - type: textarea
+    id: forum
+    attributes:
+      label: Forum / court / tribunal the plugin would target
+    validations:
+      required: true
+
+  - type: textarea
+    id: statutes
+    attributes:
+      label: Principal statute(s) and procedural rules
+    validations:
+      required: true
+
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Principal drafting outputs
+      description: Petitions, applications, written statements, appeals, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: Why this is not adequately covered by an existing plugin
+    validations:
+      required: true

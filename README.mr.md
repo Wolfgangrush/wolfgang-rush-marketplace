@@ -10,16 +10,9 @@ MIT परवान्याअंतर्गत. कोणतीही telemet
 
 ## स्थापना (Installation)
 
-### पर्याय 1 — Claude Desktop अ‍ॅप (non-developer साठी सर्वात सोपा)
+> ⚠️ **Claude Desktop अ‍ॅपचे "Upload local plugin" (drag-drop .zip) वैशिष्ट्य या प्लगइन्ससोबत काम करत नाही** — schema mismatch मुळे. Desktop वापरकर्ते: खालील Claude Code (CLI) मार्ग वापरा, किंवा Anthropic द्वारा propagation ची प्रतीक्षा करा.
 
-1. खालील तक्त्यातून कोणत्याही प्लगइनसाठी **Download** दुव्यावर क्लिक करा
-2. **Releases** पानावर **Assets** खालून `<plugin-name>.zip` डाउनलोड करा
-3. **Claude desktop app** → **Settings** → **Plugins** → **Upload local plugin** वर जा
-4. `.zip` फाइल upload box मध्ये drag करा — प्लगइन install होईल
-
-> ⚠️ GitHub चे "Download ZIP" बटण (हिरवे Code बटण) **वापरू नका** — ते प्लगइनला `repo-main/` folder मध्ये गुंडाळते, validation मोडते. नेहमी **Releases tab मधून release `.zip`** डाउनलोड करा.
-
-### पर्याय 2 — Claude Code (CLI) — संपूर्ण कुटुंबासाठी recommended
+### Claude Code (CLI) — एकमेव कार्यरत direct-install मार्ग (CLI) — संपूर्ण कुटुंबासाठी recommended
 
 जर आपल्याकडे Claude Code installed असेल, तर एकाच marketplace मधून संपूर्ण कुटुंब install करा:
 

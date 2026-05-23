@@ -10,16 +10,9 @@ MIT লাইসেন্সের অধীনে। কোনো telemetry ন
 
 ## ইনস্টলেশন (Installation)
 
-### বিকল্প ১ — Claude Desktop app (non-developer-এর জন্য সবচেয়ে সহজ)
+> ⚠️ **Claude Desktop app-এর "Upload local plugin" (drag-drop .zip) ফিচার এই plugins-এর সাথে কাজ করে না** — schema mismatch-এর কারণে। Desktop ব্যবহারকারীরা: নীচের Claude Code (CLI) পথটি ব্যবহার করুন, অথবা Anthropic propagation-এর জন্য অপেক্ষা করুন।
 
-1. নীচের তালিকা থেকে যেকোনো plugin-এর জন্য **Download** লিঙ্কে ক্লিক করুন
-2. **Releases** পৃষ্ঠায় **Assets**-এর নীচে থেকে `<plugin-name>.zip` ডাউনলোড করুন
-3. **Claude desktop app** → **Settings** → **Plugins** → **Upload local plugin**-এ যান
-4. `.zip` ফাইলটি upload box-এ drag করুন — plugin ইনস্টল হবে
-
-> ⚠️ GitHub-এর "Download ZIP" বোতাম (সবুজ Code বোতাম) **ব্যবহার করবেন না** — এটি plugin-কে `repo-main/` folder-এ মুড়িয়ে দেয়, validation ভাঙে। সর্বদা **Releases tab থেকে release `.zip`** ডাউনলোড করুন।
-
-### বিকল্প ২ — Claude Code (CLI) — সম্পূর্ণ পরিবারের জন্য recommended
+### Claude Code (CLI) — একমাত্র কার্যকর direct-install পথ (CLI) — সম্পূর্ণ পরিবারের জন্য recommended
 
 যদি আপনার কাছে Claude Code installed থাকে, তাহলে একটি marketplace থেকে সম্পূর্ণ পরিবার ইনস্টল করুন:
 

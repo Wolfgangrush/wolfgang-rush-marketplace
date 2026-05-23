@@ -59,69 +59,68 @@ The architecture follows a **corpus-as-verifier-not-source** doctrine: structura
 
 ---
 
-## Which install path is right for you?
+## How to install
 
-**If you are an advocate, law-firm associate, in-house counsel, or any non-technical user** — use **Option 1 (Claude Desktop)**. Drag and drop. No terminal. No commands to memorise.
+**Direct install requires Claude Code (the CLI).** The Wolfgang Rush plugins use the Claude Code plugin format (`.claude-plugin/plugin.json` + `agents/` + `skills/` structure). The Claude *Desktop app's* local-upload feature uses a different format (single-file Anthropic Skills schema) and will reject these plugins with a "Plugin validation failed" toast.
 
-**If you are a developer, tech-comfortable lawyer, legal-tech researcher, or want to install the whole family at once** — use **Option 2 (Claude Code CLI)**. Two commands. Installs every plugin from one marketplace.
+If you are a Desktop-app user, you have two options: **(a)** install Claude Code (the CLI — a one-line install) and use the marketplace path below, **or (b)** wait for these plugins to propagate from Anthropic's submission queue to the public Desktop-browsable community catalog (status as of writing: submissions approved 17 May 2026, propagation pending — see [Status](#status) below).
 
-Both paths use the same plugin code and the same six-agent pipeline. Both run entirely locally on your machine. Privacy posture is identical — see the [Privacy & security](#privacy--security) section below.
+### 🧑‍💻 Install via Claude Code (CLI)
 
----
+First-time Claude Code install (one line, copy-paste into Terminal):
 
-## Two ways to install
+```bash
+curl -fsSL https://claude.ai/install.sh | sh
+```
 
-### ✅ Option 1 — Claude desktop app (easiest for non-developers)
-
-Each plugin ships a pre-packaged `.zip` on its **GitHub Releases** page (see the table below). The zip is built with the plugin manifest at its root so the Claude desktop app accepts it directly.
-
-1. Click the release link for any plugin in the table below
-2. Under **Assets**, download the `<plugin-name>.zip`
-3. Open the **Claude desktop app** → **Settings** → **Plugins** → **Upload local plugin**
-4. Drag the `.zip` into the upload box. The plugin installs
-5. Repeat for any other plugin you want
-
-> ⚠️ **Do not use GitHub's "Download ZIP" button** (the green Code button → Download ZIP). That wraps the plugin inside a `repo-main/` folder, breaking validation. Always use the **release `.zip` from the Releases tab**.
-
-### 🧑‍💻 Option 2 — Claude Code (CLI) — recommended for plugin family
-
-If you have Claude Code installed (`curl -fsSL https://claude.ai/install.sh | sh`), the whole family installs from one marketplace:
+Then add the Wolfgang Rush marketplace and install any plugin from the family:
 
 ```bash
 /plugin marketplace add Wolfgangrush/wolfgang-rush-marketplace
 /plugin install indian-hc-drafting@wolfgang-rush
 ```
 
-Replace `indian-hc-drafting` with any plugin name from the table. Install as many as you need with one line each.
+Replace `indian-hc-drafting` with any plugin name from the [table below](#the-14-plugins). Install as many as you need — one command per plugin.
 
-To browse what's available inside Claude Code:
+To browse what's available inside Claude Code interactively:
 
 ```bash
 /plugin
 ```
 
-Then go to the **Discover** tab.
+Then go to the **Discover** tab. All installed plugins show in the **Installed** tab.
+
+### 🖥️ For Claude Desktop users
+
+The Desktop app's *built-in marketplace browser* (Settings → Customize → Plugins) will be able to install these plugins **once Anthropic completes propagation** from the submissions dashboard to the public community marketplace catalog. Until that happens, Desktop-only users can either:
+
+- Install Claude Code and use the CLI path above (recommended — Claude Code coexists with the Desktop app, doesn't replace it)
+- Wait for Anthropic propagation (timeline unknown; tracking via [issue #1272](https://github.com/anthropics/claude-plugins-official/issues/1272) on the official plugin repo)
+
+**The Desktop app's "Upload local plugin" feature (drag-drop .zip) is structurally incompatible with this plugin family** — it expects a different schema. Do not waste time trying to drag the GitHub Release zips into it.
 
 ---
 
 ## The 14 plugins
 
-| Plugin | Court / domain | Desktop release |
+| Plugin | Court / domain | Source repo |
 |---|---|---|
-| `supreme-court-drafting` | Supreme Court — SLPs, Article 32 writs, curative/review | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/supreme-court-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-hc-drafting` | Any High Court — Article 226 writs, PILs, LPAs | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-hc-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `district-court-drafting` | District Courts — CPC suits, applications, WS | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/district-court-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-family-drafting` | Family Courts — divorce, maintenance, custody | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-family-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-consumer-drafting` | District/State/National Consumer Commissions (CPA 2019) | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-consumer-drafting/releases/tag/v0.1.0-alpha) |
-| `indian-mact-drafting` | MACT — §166 MV Act compensation | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-mact-drafting/releases/tag/v0.1.0-alpha) |
-| `indian-banking-drafting` | DRT, SARFAESI, NI Act §138, IBC §7/§95, DRAT | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-banking-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-labour-drafting` | Labour courts — ID Act, gratuity, ESI/PF, SH | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-labour-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-ip-drafting` | Trademark, copyright, patent | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-ip-drafting/releases/tag/v0.1.0-alpha) |
-| `indian-tax-drafting` | ITAT, CIT(A), tax writs | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-tax-drafting/releases/tag/v0.1.0-alpha) |
-| `indian-property-drafting` | Sale/gift deeds, partition, specific performance | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-property-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-contracts-drafting` | Contracts, arbitration §8/§11/§34, recovery | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-contracts-drafting-litigation/releases/tag/v0.1.0-alpha) |
-| `indian-company-drafting` | NCLT (oppression, schemes, IBC §7/§9) AND NCLAT appeals (§421, §61 IBC) | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-company-drafting/releases/tag/v0.1.0-alpha) |
-| `indian-rent-control-drafting` | Rent-control eviction · standard rent · rent deposit · §106 TPA notice · MTA 2021 | [Download v0.1.0-alpha](https://github.com/Wolfgangrush/indian-rent-control-drafting/releases/tag/v0.1.0-alpha) |
+| `supreme-court-drafting` | Supreme Court — SLPs, Article 32 writs, curative/review | [github.com/Wolfgangrush/supreme-court-drafting-litigation](https://github.com/Wolfgangrush/supreme-court-drafting-litigation) |
+| `indian-hc-drafting` | Any High Court — Article 226 writs, PILs, LPAs | [github.com/Wolfgangrush/indian-hc-drafting-litigation](https://github.com/Wolfgangrush/indian-hc-drafting-litigation) |
+| `district-court-drafting` | District Courts — CPC suits, applications, WS | [github.com/Wolfgangrush/district-court-drafting-litigation](https://github.com/Wolfgangrush/district-court-drafting-litigation) |
+| `indian-family-drafting` | Family Courts — divorce, maintenance, custody | [github.com/Wolfgangrush/indian-family-drafting-litigation](https://github.com/Wolfgangrush/indian-family-drafting-litigation) |
+| `indian-consumer-drafting` | District/State/National Consumer Commissions (CPA 2019) | [github.com/Wolfgangrush/indian-consumer-drafting](https://github.com/Wolfgangrush/indian-consumer-drafting) |
+| `indian-mact-drafting` | MACT — §166 MV Act compensation | [github.com/Wolfgangrush/indian-mact-drafting](https://github.com/Wolfgangrush/indian-mact-drafting) |
+| `indian-banking-drafting` | DRT, SARFAESI, NI Act §138, IBC §7/§95, DRAT | [github.com/Wolfgangrush/indian-banking-drafting-litigation](https://github.com/Wolfgangrush/indian-banking-drafting-litigation) |
+| `indian-labour-drafting` | Labour courts — ID Act, gratuity, ESI/PF, SH | [github.com/Wolfgangrush/indian-labour-drafting-litigation](https://github.com/Wolfgangrush/indian-labour-drafting-litigation) |
+| `indian-ip-drafting` | Trademark, copyright, patent | [github.com/Wolfgangrush/indian-ip-drafting](https://github.com/Wolfgangrush/indian-ip-drafting) |
+| `indian-tax-drafting` | ITAT, CIT(A), tax writs | [github.com/Wolfgangrush/indian-tax-drafting](https://github.com/Wolfgangrush/indian-tax-drafting) |
+| `indian-property-drafting` | Sale/gift deeds, partition, specific performance | [github.com/Wolfgangrush/indian-property-drafting-litigation](https://github.com/Wolfgangrush/indian-property-drafting-litigation) |
+| `indian-contracts-drafting` | Contracts, arbitration §8/§11/§34, recovery | [github.com/Wolfgangrush/indian-contracts-drafting-litigation](https://github.com/Wolfgangrush/indian-contracts-drafting-litigation) |
+| `indian-company-drafting` | NCLT (oppression, schemes, IBC §7/§9) AND NCLAT appeals (§421, §61 IBC) | [github.com/Wolfgangrush/indian-company-drafting](https://github.com/Wolfgangrush/indian-company-drafting) |
+| `indian-rent-control-drafting` | Rent-control eviction · standard rent · rent deposit · §106 TPA notice · MTA 2021 | [github.com/Wolfgangrush/indian-rent-control-drafting](https://github.com/Wolfgangrush/indian-rent-control-drafting) |
+
+All plugins also have `v0.1.0-alpha` GitHub Release tags with source bundles attached. Those bundles are **not** Desktop-app-installable (different schema); they are a historical snapshot of the plugin at submission time, useful only for inspection.
 
 ---
 

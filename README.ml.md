@@ -10,16 +10,9 @@ MIT ലൈസൻസിന് കീഴിൽ. telemetry ഇല്ല. user accou
 
 ## ഇൻസ്റ്റാളേഷൻ (Installation)
 
-### ഓപ്ഷൻ 1 — Claude Desktop app (non-developer-നായി ഏറ്റവും എളുപ്പമുള്ളത്)
+> ⚠️ **Claude Desktop app-ന്റെ "Upload local plugin" (drag-drop .zip) സവിശേഷത ഈ plugins-മായി പ്രവർത്തിക്കില്ല** — schema mismatch കാരണം. Desktop ഉപയോക്താക്കൾ: താഴെയുള്ള Claude Code (CLI) വഴി ഉപയോഗിക്കുക, അല്ലെങ്കിൽ Anthropic propagation-നായി കാത്തിരിക്കുക.
 
-1. താഴെയുള്ള പട്ടികയിൽ നിന്നുള്ള ഏതെങ്കിലും plugin-നായി **Download** ലിങ്കിൽ ക്ലിക്ക് ചെയ്യുക
-2. **Releases** പേജിൽ **Assets**-നു താഴെ നിന്ന് `<plugin-name>.zip` ഡൗൺലോഡ് ചെയ്യുക
-3. **Claude desktop app** → **Settings** → **Plugins** → **Upload local plugin** എന്നതിലേക്ക് പോകുക
-4. `.zip` ഫയൽ upload box-ലേക്ക് drag ചെയ്യുക — plugin install ആകും
-
-> ⚠️ GitHub-ന്റെ "Download ZIP" ബട്ടൺ (പച്ച Code ബട്ടൺ) **ഉപയോഗിക്കരുത്** — അത് plugin-നെ `repo-main/` folder-ൽ പൊതിയുന്നു, validation തകർക്കുന്നു. എപ്പോഴും **Releases tab-ൽ നിന്ന് release `.zip`** ഡൗൺലോഡ് ചെയ്യുക.
-
-### ഓപ്ഷൻ 2 — Claude Code (CLI) — മുഴുവൻ കുടുംബത്തിനും recommended
+### Claude Code (CLI) — ഒറ്റ പ്രവർത്തിക്കുന്ന direct-install വഴി (CLI) — മുഴുവൻ കുടുംബത്തിനും recommended
 
 നിങ്ങളുടെ പക്കൽ Claude Code installed ഉണ്ടെങ്കിൽ, ഒരൊറ്റ marketplace-ൽ നിന്ന് മുഴുവൻ കുടുംബവും install ചെയ്യുക:
 

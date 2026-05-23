@@ -12,7 +12,7 @@ MIT परवान्याअंतर्गत. कोणतीही telemet
 
 > ⚠️ **Claude Desktop अ‍ॅपचे "Upload local plugin" (drag-drop .zip) वैशिष्ट्य या प्लगइन्ससोबत काम करत नाही** — schema mismatch मुळे. Desktop वापरकर्ते: खालील Claude Code (CLI) मार्ग वापरा, किंवा Anthropic द्वारा propagation ची प्रतीक्षा करा.
 
-### Claude Code (CLI) — एकमेव कार्यरत direct-install मार्ग (CLI) — संपूर्ण कुटुंबासाठी recommended
+### Claude Code (CLI) — एकमेव कार्यरत direct-install मार्ग
 
 जर आपल्याकडे Claude Code installed असेल, तर एकाच marketplace मधून संपूर्ण कुटुंब install करा:
 

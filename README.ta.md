@@ -12,7 +12,7 @@ MIT உரிமத்தின் கீழ். telemetry இல்லை. user
 
 > ⚠️ **Claude Desktop செயலியின் "Upload local plugin" (drag-drop .zip) வசதி இந்த plugin-களுடன் வேலை செய்யாது** — schema mismatch காரணமாக. Desktop பயனர்கள்: கீழே உள்ள Claude Code (CLI) வழியைப் பயன்படுத்தவும், அல்லது Anthropic propagation-க்காக காத்திருக்கவும்.
 
-### Claude Code (CLI) — ஒரே செயல்படும் direct-install வழி (CLI) — முழு குடும்பத்திற்கு recommended
+### Claude Code (CLI) — ஒரே செயல்படும் direct-install வழி
 
 உங்களிடம் Claude Code installed இருந்தால், ஒரே marketplace-இலிருந்து முழு குடும்பத்தையும் நிறுவவும்:
 

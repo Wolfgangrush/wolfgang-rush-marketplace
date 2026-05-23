@@ -12,7 +12,7 @@ MIT ലൈസൻസിന് കീഴിൽ. telemetry ഇല്ല. user accou
 
 > ⚠️ **Claude Desktop app-ന്റെ "Upload local plugin" (drag-drop .zip) സവിശേഷത ഈ plugins-മായി പ്രവർത്തിക്കില്ല** — schema mismatch കാരണം. Desktop ഉപയോക്താക്കൾ: താഴെയുള്ള Claude Code (CLI) വഴി ഉപയോഗിക്കുക, അല്ലെങ്കിൽ Anthropic propagation-നായി കാത്തിരിക്കുക.
 
-### Claude Code (CLI) — ഒറ്റ പ്രവർത്തിക്കുന്ന direct-install വഴി (CLI) — മുഴുവൻ കുടുംബത്തിനും recommended
+### Claude Code (CLI) — ഒറ്റ പ്രവർത്തിക്കുന്ന direct-install വഴി
 
 നിങ്ങളുടെ പക്കൽ Claude Code installed ഉണ്ടെങ്കിൽ, ഒരൊറ്റ marketplace-ൽ നിന്ന് മുഴുവൻ കുടുംബവും install ചെയ്യുക:
 

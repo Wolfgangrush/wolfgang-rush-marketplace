@@ -1,0 +1,40 @@
+name: Validate marketplace manifest
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate marketplace.json schema
+        run: |
+          python3 -c "
+          import json, sys
+          with open(\"./.claude-plugin/marketplace.json\") as f:
+              m = json.load(f)
+          errors = []
+          required = [\"name\", \"description\", \"version\", \"owner\", \"plugins\"]
+          for k in required:
+              if k not in m:
+                  errors.append(f\"Missing required key: {k}\")
+          for i, p in enumerate(m.get(\"plugins\", [])):
+              prefix = f\"plugins[{i}] ({p.get(\"name\", \"?\")})\"
+              for k in [\"name\", \"source\", \"description\"]:
+                  if k not in p:
+                      errors.append(f\"{prefix}: missing {k}\")
+              src = p.get(\"source\", {})
+              if not isinstance(src, dict):
+                  errors.append(f\"{prefix}: source must be object\")
+              elif \"source\" not in src:
+                  errors.append(f\"{prefix}: source.source missing\")
+          if errors:
+              print(\"\n\".join(errors))
+              sys.exit(1)
+          print(f\"✔ marketplace.json valid: {len(m[\"plugins\"])} plugins\")
+          "
+

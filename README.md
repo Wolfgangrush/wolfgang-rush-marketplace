@@ -19,6 +19,16 @@ MIT-licensed. No telemetry. No user accounts. Runs entirely inside the user's lo
 
 ---
 
+## 🌐 Read in your language
+
+Install instructions are available in ten Indian languages. Tap the language you read most fluently:
+
+[हिन्दी](README.hi.md) · [मराठी](README.mr.md) · [தமிழ்](README.ta.md) · [తెలుగు](README.te.md) · [বাংলা](README.bn.md) · [ગુજરાતી](README.gu.md) · [ಕನ್ನಡ](README.kn.md) · [ਪੰਜਾਬੀ](README.pa.md) · [മലയാളം](README.ml.md) · [اردو](README.ur.md)
+
+> 🙏 Translations are community-contributable. If a phrase reads awkwardly in your language, please [open an issue](https://github.com/Wolfgangrush/wolfgang-rush-marketplace/issues) or send a pull request — every improvement makes this more accessible to the Indian bar.
+
+---
+
 ## What is Wolfgang Rush?
 
 **Wolfgang Rush** is the publishing identity of [Rushikesh R. Mahajan](https://www.linkedin.com/in/rushirmahajan), an advocate at the Bombay High Court (Nagpur Bench). The plugins are released as **open legal-tech infrastructure** for the Indian bar — for advocates, law-firm associates, in-house counsel, law students, and legal-tech researchers who want AI-assisted drafting that knows Indian procedural law out of the box.
@@ -46,6 +56,16 @@ Every plugin in the family runs the same internal pipeline:
 | 6 | **Overseer**| Adversarial read — finds weak limbs, attackable defects, missing prayers, opposing-counsel angles |
 
 The architecture follows a **corpus-as-verifier-not-source** doctrine: structural skeletons are sourced from public statutes, schedule forms, and court rules; drafted prose is original. The Verifier carries statutory-currency discipline so deprecated statutes do not silently leak into output.
+
+---
+
+## Which install path is right for you?
+
+**If you are an advocate, law-firm associate, in-house counsel, or any non-technical user** — use **Option 1 (Claude Desktop)**. Drag and drop. No terminal. No commands to memorise.
+
+**If you are a developer, tech-comfortable lawyer, legal-tech researcher, or want to install the whole family at once** — use **Option 2 (Claude Code CLI)**. Two commands. Installs every plugin from one marketplace.
+
+Both paths use the same plugin code and the same six-agent pipeline. Both run entirely locally on your machine. Privacy posture is identical — see the [Privacy & security](#privacy--security) section below.
 
 ---
 
@@ -127,7 +147,13 @@ Then go to the **Discover** tab.
 
 All 14 plugins are at **v0.1.0-alpha**. The marketplace itself is at **v0.1.0**. This is a working alpha release — usable in production drafting workflows by advocates who exercise the same professional judgement they would apply to any drafting assistant. Bug reports, plugin proposals, and contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The plugins have been submitted to Anthropic's community plugin marketplace (review status: `Published` as of 17 May 2026). Sync propagation to the user-facing community marketplace catalogue is currently pending — install via the Wolfgang Rush marketplace above for the working path.
+**What you can say accurately about distribution status:**
+
+- All 14 plugins were submitted to Anthropic's community plugin marketplace and marked as `Published` in the submissions dashboard on **17 May 2026**
+- All 14 plugins are approved by Anthropic's review pipeline
+- Plugins are **available now** via the Wolfgang Rush marketplace at [github.com/Wolfgangrush/wolfgang-rush-marketplace](https://github.com/Wolfgangrush/wolfgang-rush-marketplace) — install path documented above
+
+Sync propagation from Anthropic's submissions dashboard to the user-facing `anthropics/claude-plugins-community` catalogue is currently pending. Install via the Wolfgang Rush marketplace above for the working path.
 
 ---
 

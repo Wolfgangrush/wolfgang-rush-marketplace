@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace",
   "name": "wolfgang-rush",
-  "description": "Wolfgang Rush — open-source Claude Code plugin family for Indian-court litigation drafting. 14 court-specific drafting plugins (Supreme Court, all High Courts, District Courts, MACT, Family, Consumer, Banking, IP, Tax, Labour, Property, Contracts, Company tribunals, Rent Control). Each plugin ships a 6-agent drafting pipeline (Reader → Format → Drafter → Verifier → Refiner → Overseer) with court-config-aware skeletons.",
+  "description": "Wolfgang Rush \u2014 open-source Claude Code plugin family for Indian-court litigation drafting. 14 court-specific drafting plugins (Supreme Court, all High Courts, District Courts, MACT, Family, Consumer, Banking, IP, Tax, Labour, Property, Contracts, Company tribunals, Rent Control). Each plugin ships a 6-agent drafting pipeline (Reader \u2192 Format \u2192 Drafter \u2192 Verifier \u2192 Refiner \u2192 Overseer) with court-config-aware skeletons.",
   "version": "0.1.0",
   "owner": {
     "name": "Wolfgang Rush",
@@ -11,142 +11,237 @@
     {
       "name": "supreme-court-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/supreme-court-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/supreme-court-drafting-litigation.git"
       },
-      "description": "Drafts pleadings before the Supreme Court of India — SLPs, Writs under Article 32, Curative & Review petitions, Transfer petitions.",
+      "description": "Drafts pleadings before the Supreme Court of India \u2014 SLPs, Writs under Article 32, Curative & Review petitions, Transfer petitions.",
       "category": "litigation-drafting",
-      "tags": ["india", "supreme-court", "slp", "writ-petition", "constitutional"]
+      "tags": [
+        "india",
+        "supreme-court",
+        "slp",
+        "writ-petition",
+        "constitutional"
+      ]
     },
     {
       "name": "indian-hc-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-hc-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-hc-drafting-litigation.git"
       },
-      "description": "Bench-config-aware drafting plugin for any High Court of India — Writs under Article 226, PILs, Letters Patent Appeals, Criminal & Civil revisions.",
+      "description": "Bench-config-aware drafting plugin for any High Court of India \u2014 Writs under Article 226, PILs, Letters Patent Appeals, Criminal & Civil revisions.",
       "category": "litigation-drafting",
-      "tags": ["india", "high-court", "writ-petition", "pil", "article-226"]
+      "tags": [
+        "india",
+        "high-court",
+        "writ-petition",
+        "pil",
+        "article-226"
+      ]
     },
     {
       "name": "district-court-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/district-court-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/district-court-drafting-litigation.git"
       },
-      "description": "Civil-side drafting plugin for District Courts across India — suits under CPC, applications, written statements, execution proceedings.",
+      "description": "Civil-side drafting plugin for District Courts across India \u2014 suits under CPC, applications, written statements, execution proceedings.",
       "category": "litigation-drafting",
-      "tags": ["india", "district-court", "civil", "cpc", "trial-court"]
+      "tags": [
+        "india",
+        "district-court",
+        "civil",
+        "cpc",
+        "trial-court"
+      ]
     },
     {
       "name": "indian-family-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-family-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-family-drafting-litigation.git"
       },
-      "description": "Drafts pleadings before Indian Family Courts — divorce, maintenance, custody, guardianship, restitution of conjugal rights.",
+      "description": "Drafts pleadings before Indian Family Courts \u2014 divorce, maintenance, custody, guardianship, restitution of conjugal rights.",
       "category": "litigation-drafting",
-      "tags": ["india", "family-court", "divorce", "maintenance", "custody"]
+      "tags": [
+        "india",
+        "family-court",
+        "divorce",
+        "maintenance",
+        "custody"
+      ]
     },
     {
       "name": "indian-consumer-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-consumer-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-consumer-drafting.git"
       },
       "description": "Consumer-protection & medical-negligence drafting plugin for District / State / National Consumer Disputes Redressal Commissions under CPA 2019.",
       "category": "litigation-drafting",
-      "tags": ["india", "consumer-protection", "ncdrc", "medical-negligence", "cpa-2019"]
+      "tags": [
+        "india",
+        "consumer-protection",
+        "ncdrc",
+        "medical-negligence",
+        "cpa-2019"
+      ]
     },
     {
       "name": "indian-mact-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-mact-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-mact-drafting.git"
       },
-      "description": "Motor Accident Claims Tribunal drafting plugin — compensation petitions under Section 166 MV Act, no-fault claims, insurance disputes.",
+      "description": "Motor Accident Claims Tribunal drafting plugin \u2014 compensation petitions under Section 166 MV Act, no-fault claims, insurance disputes.",
       "category": "litigation-drafting",
-      "tags": ["india", "mact", "motor-accident", "compensation", "mv-act"]
+      "tags": [
+        "india",
+        "mact",
+        "motor-accident",
+        "compensation",
+        "mv-act"
+      ]
     },
     {
       "name": "indian-banking-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-banking-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-banking-drafting-litigation.git"
       },
-      "description": "Banking & financial-litigation drafting plugin — DRT applications, SARFAESI proceedings, NI Act §138, IBC §7/§95, DRAT appeals.",
+      "description": "Banking & financial-litigation drafting plugin \u2014 DRT applications, SARFAESI proceedings, NI Act \u00a7138, IBC \u00a77/\u00a795, DRAT appeals.",
       "category": "litigation-drafting",
-      "tags": ["india", "banking", "drt", "sarfaesi", "ni-act", "ibc"]
+      "tags": [
+        "india",
+        "banking",
+        "drt",
+        "sarfaesi",
+        "ni-act",
+        "ibc"
+      ]
     },
     {
       "name": "indian-labour-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-labour-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-labour-drafting-litigation.git"
       },
-      "description": "Labour, industrial-disputes & employment-rights drafting plugin — ID Act references, gratuity, ESI/PF, sexual-harassment complaints.",
+      "description": "Labour, industrial-disputes & employment-rights drafting plugin \u2014 ID Act references, gratuity, ESI/PF, sexual-harassment complaints.",
       "category": "litigation-drafting",
-      "tags": ["india", "labour", "industrial-disputes", "employment", "id-act"]
+      "tags": [
+        "india",
+        "labour",
+        "industrial-disputes",
+        "employment",
+        "id-act"
+      ]
     },
     {
       "name": "indian-ip-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-ip-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-ip-drafting.git"
       },
-      "description": "Intellectual-property litigation drafting — trademark infringement, copyright suits, patent revocations, passing-off actions.",
+      "description": "Intellectual-property litigation drafting \u2014 trademark infringement, copyright suits, patent revocations, passing-off actions.",
       "category": "litigation-drafting",
-      "tags": ["india", "intellectual-property", "trademark", "copyright", "patent"]
+      "tags": [
+        "india",
+        "intellectual-property",
+        "trademark",
+        "copyright",
+        "patent"
+      ]
     },
     {
       "name": "indian-tax-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-tax-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-tax-drafting.git"
       },
-      "description": "Direct-tax appellate litigation drafting — ITAT appeals, CIT(A) appeals, writ petitions on tax matters, refund claims.",
+      "description": "Direct-tax appellate litigation drafting \u2014 ITAT appeals, CIT(A) appeals, writ petitions on tax matters, refund claims.",
       "category": "litigation-drafting",
-      "tags": ["india", "tax", "itat", "income-tax", "appellate"]
+      "tags": [
+        "india",
+        "tax",
+        "itat",
+        "income-tax",
+        "appellate"
+      ]
     },
     {
       "name": "indian-property-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-property-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-property-drafting-litigation.git"
       },
-      "description": "Property, conveyancing, estate & inter-vivos transfer instruments — sale deeds, gift deeds, partition suits, specific performance.",
+      "description": "Property, conveyancing, estate & inter-vivos transfer instruments \u2014 sale deeds, gift deeds, partition suits, specific performance.",
       "category": "litigation-drafting",
-      "tags": ["india", "property", "conveyancing", "specific-performance", "partition"]
+      "tags": [
+        "india",
+        "property",
+        "conveyancing",
+        "specific-performance",
+        "partition"
+      ]
     },
     {
       "name": "indian-contracts-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-contracts-drafting-litigation"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-contracts-drafting-litigation.git"
       },
-      "description": "Contracts, personal-estate documents & contractual-litigation drafting — breach of contract, arbitration §8/§11/§34, recovery suits.",
+      "description": "Contracts, personal-estate documents & contractual-litigation drafting \u2014 breach of contract, arbitration \u00a78/\u00a711/\u00a734, recovery suits.",
       "category": "litigation-drafting",
-      "tags": ["india", "contracts", "arbitration", "breach", "recovery"]
+      "tags": [
+        "india",
+        "contracts",
+        "arbitration",
+        "breach",
+        "recovery"
+      ]
     },
     {
       "name": "indian-company-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-company-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-company-drafting.git"
       },
-      "description": "Company-law tribunal litigation drafting — NCLT petitions under Companies Act 2013 (oppression & mismanagement, schemes of arrangement, reduction of capital, revival, investigation, class action) AND NCLAT appellate drafting (Companies Act §421 appeals and IBC §61 appeals from NCLT orders).",
+      "description": "Company-law tribunal litigation drafting \u2014 NCLT petitions under Companies Act 2013 (oppression & mismanagement, schemes of arrangement, reduction of capital, revival, investigation, class action) AND NCLAT appellate drafting (Companies Act \u00a7421 appeals and IBC \u00a761 appeals from NCLT orders).",
       "category": "litigation-drafting",
-      "tags": ["india", "company-law", "nclt", "nclat", "ibc", "oppression-mismanagement", "section-421", "section-61-ibc"]
+      "tags": [
+        "india",
+        "company-law",
+        "nclt",
+        "nclat",
+        "ibc",
+        "oppression-mismanagement",
+        "section-421",
+        "section-61-ibc"
+      ]
     },
     {
       "name": "indian-rent-control-drafting",
       "source": {
-        "source": "github",
-        "repo": "Wolfgangrush/indian-rent-control-drafting"
+        "source": "url",
+        "url": "https://github.com/Wolfgangrush/indian-rent-control-drafting.git"
       },
-      "description": "Rent-control / landlord-tenant litigation drafting across all major State Rent Control regimes — eviction (non-payment / bona-fide need / nuisance / sub-letting) under Maharashtra Rent Control Act 1999, Delhi Rent Control Act 1958, Tamil Nadu 2017 Act, Karnataka Rent Act 2001, West Bengal Premises Tenancy Act 1997, UP Urban Buildings Act 1972, Gujarat Rent Control Act, AP/Telangana Buildings Act 1960 · standard-rent / fair-rent fixation · rent-deposit · Section 106 TPA termination notice · landlord recovery suit · tenant written statement · revision/appeal · Model Tenancy Act 2021 framework.",
+      "description": "Rent-control / landlord-tenant litigation drafting across all major State Rent Control regimes \u2014 eviction (non-payment / bona-fide need / nuisance / sub-letting) under Maharashtra Rent Control Act 1999, Delhi Rent Control Act 1958, Tamil Nadu 2017 Act, Karnataka Rent Act 2001, West Bengal Premises Tenancy Act 1997, UP Urban Buildings Act 1972, Gujarat Rent Control Act, AP/Telangana Buildings Act 1960 \u00b7 standard-rent / fair-rent fixation \u00b7 rent-deposit \u00b7 Section 106 TPA termination notice \u00b7 landlord recovery suit \u00b7 tenant written statement \u00b7 revision/appeal \u00b7 Model Tenancy Act 2021 framework.",
       "category": "litigation-drafting",
-      "tags": ["india", "rent-control", "eviction", "tenancy", "landlord-tenant", "small-causes", "rent-controller", "maharashtra-rent-control", "delhi-rent-control", "model-tenancy-act-2021", "section-106-tpa", "bona-fide-personal-need"]
+      "tags": [
+        "india",
+        "rent-control",
+        "eviction",
+        "tenancy",
+        "landlord-tenant",
+        "small-causes",
+        "rent-controller",
+        "maharashtra-rent-control",
+        "delhi-rent-control",
+        "model-tenancy-act-2021",
+        "section-106-tpa",
+        "bona-fide-personal-need"
+      ]
     }
   ]
 }

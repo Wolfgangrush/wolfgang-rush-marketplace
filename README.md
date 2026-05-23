@@ -138,8 +138,12 @@ Then go to the **Discover** tab.
 ## Privacy & security
 
 - **No telemetry, no user accounts, no server.** Plugins run entirely locally inside the user's Claude Code installation. The publisher operates no data-collection infrastructure of any kind. Full details: [PRIVACY.md](PRIVACY.md)
+- **Privacy primitive in every plugin:** The Reader agent (first of the six-agent pipeline) calls the [pseudonymisation-gateway](https://github.com/Wolfgangrush/pseudonymisation-gateway) on the user's case folder BEFORE any cloud-LLM call. Real client names, government IDs, case numbers, phone numbers, and currency amounts are replaced with placeholders (`[PERSON_1]`, `[AADHAAR_1]`, `[CASE_NO_1]`, etc.) in a session-scoped in-memory token map that never touches disk. Cloud LLM vendors never see real PII. The Overseer agent (last of the pipeline) calls `desanitize()` to restore real values in the final pleading before it reaches the file system.
 - **Security disclosure:** GitHub Private Vulnerability Reporting enabled on this repo. See [SECURITY.md](SECURITY.md) for the disclosure process and response timelines
 - **Professional confidentiality:** The plugins are tools for use by qualified advocates and law-firm staff. Users remain professionally responsible for what material they pass to Claude Code, consistent with advocate-client privilege under Section 132 of the Bharatiya Sakshya Adhiniyam 2023 and applicable bar-council rules. The plugins process case-folder content locally; the publisher receives no copy
+
+**Privacy policy in other languages** (summary translations — English original is legally authoritative):
+[हिन्दी](PRIVACY.hi.md) · [मराठी](PRIVACY.mr.md) · [தமிழ்](PRIVACY.ta.md) · [తెలుగు](PRIVACY.te.md) · [বাংলা](PRIVACY.bn.md) · [ગુજરાતી](PRIVACY.gu.md) · [ಕನ್ನಡ](PRIVACY.kn.md) · [ਪੰਜਾਬੀ](PRIVACY.pa.md) · [മലയാളം](PRIVACY.ml.md) · [اردو](PRIVACY.ur.md)
 
 ---
 

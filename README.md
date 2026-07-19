@@ -31,7 +31,7 @@ Install instructions are available in ten Indian languages. Tap the language you
 
 ## What is Wolfgang Rush?
 
-**Wolfgang Rush** is the publishing identity of [Rushikesh R. Mahajan](https://www.linkedin.com/in/rushirmahajan), an advocate at the Bombay High Court (Nagpur Bench). The plugins are released as **open legal-tech infrastructure** for the Indian bar — for advocates, law-firm associates, in-house counsel, law students, and legal-tech researchers who want AI-assisted drafting that knows Indian procedural law out of the box.
+**Wolfgang Rush** is the publishing identity of [Rushikesh R. Mahajan](https://www.linkedin.com/in/rushirmahajan), an advocate with right of audience before courts across India. The plugins are released as **open legal-tech infrastructure** for the Indian bar — for advocates, law-firm associates, in-house counsel, law students, and legal-tech researchers who want AI-assisted drafting that knows Indian procedural law out of the box.
 
 The project sits at the intersection of two observations:
 

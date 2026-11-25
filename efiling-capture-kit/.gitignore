@@ -1,0 +1,10 @@
+node_modules/
+recording.json
+pages/
+bookmarklet*.txt
+# Data and personal details must never be committed to this (public) repository:
+forbid.txt
+notes.md
+templates/
+captures/*
+!captures/README.md

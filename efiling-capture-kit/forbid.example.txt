@@ -1,0 +1,3 @@
+# Words that must NEVER appear in anything you share. One per line. Lines starting with # are ignored.
+# Add: your name, bar code / enrolment number, firm name, your mobile number, your email,
+# and the invented client's and opponent's names.
